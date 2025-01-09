@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="content" content="KM Tutorial Online">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>Job Application Form - Hutgen Info Tech</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Javascript -->
+ 	</head>
+<body>
+
+	<div class="container">
+		<main>			
+			<div class="application-form">
+				<h2>Job Application Here !</h2>
+				<div class="application-form-detail">					
+					<form>
+						<h4 style="font-weight: 200; text-align:center;">Contact Information</h4>
+						<div class="form-inline">
+							<div class="form-group">
+								<label>First Name *</label>
+								<input type="text" id="fname" name="fname" required>
+							</div>
+							<div class="form-group">
+								<label>Last Name *</label>
+								<input type="text" id="lname" name="lname" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Email *</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+						<div class="form-group">
+							<label>Phone *</label>
+							<input type="tel" id="tel" name="tel" minlength="11" maxlength="11" required>
+						</div>
+						<br>
+						<h4 style="font-weight: 200; text-align:center;">Position</h4>
+						<hr>
+						<div class="form-group">
+							<label>Position you are applying for *</label>
+							<input type="text" id="position" name="position" required>
+						</div>
+						<div class="form-group">
+							<label>Resume Upload</label>
+							<input type="file" id="resume" name="resume">
+						</div>
+						<div class="form-group">
+							<label>Portfolio Website URL</label>
+							<input type="url" id="website" name="website">
+						</div>
+						<div class="form-group">
+							<label>Salary Requirementsin in INR</label>
+							<input type="text" id="salary" name="salary">
+						</div>
+						<div class="form-group">
+							<label>When can you start?</label>
+							<input type="text" id="joining" name="joining">
+						</div>
+						<br>
+						<div class="form-group">
+							<label>Are you willing to relocate?</label>
+							<br>
+							<div class="form-inline flex">
+								<input type="radio" id="relocation" name="relocation">
+								<label>Yes</label>
+							</div>
+							<div class="form-inline flex">
+								<input type="radio" id="relocation" name="relocation">
+								<label>No</label>
+							</div>
+							<div class="form-inline flex">
+								<input type="radio" id="relocation" name="relocation">
+								<label>Not Sure</label>
+							</div>
+						</div>
+						<br>
+						<div class="form-group">
+							<label>Last company you worked for?</label>
+							<input type="text" id="last-employer" name="last-employer" autocomplete="off">
+						</div>
+						<div class="form-group">
+							<label>Cover Letter</label>
+							<textarea id="address" name="address" rows="5"></textarea>
+						</div>
+						<hr><br>
+						<button type="submit">Submit</button>
+					</form>				
+				</div>
+			</div>		
+		</main> <!-- Main Area -->
+	</div>
+
+</body>
+
+</html>

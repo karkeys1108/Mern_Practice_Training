@@ -1,0 +1,31 @@
+
+inline 
+internal 
+external 
+
+
+selector 
+
+tag selector 
+universal selector
+
+
+class selector 
+id selector 
+attribute selector 
+pseudo-class selector 
+pseudo-element selector
+
+
+combinators 
+child combinator
+
+
+
+FLEX 
+    flex-direction
+    flex-gap
+    flex-wrap
+    flex-shrink
+    fle
+

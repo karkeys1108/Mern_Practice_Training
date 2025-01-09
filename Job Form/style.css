@@ -1,0 +1,144 @@
+:root {
+    --mainColor: #754E1A;
+    --secondaryColor: #CBA35C; 
+    --accentColor: #F8E1B7;
+    --backgroundColor: #98571e; 
+    --white: #fff;
+}
+
+/* Import Font */
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+/* Global Settings */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: var(--backgroundColor);
+}
+
+hr {
+    border: 1px solid rgba(236, 240, 241, 0.3);
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Content Styling */
+main {
+    width:  500px;
+    height: auto;
+    background-color: var(--white);
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    z-index: 100;
+}
+
+main h2 {
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--secondaryColor);
+    
+}
+
+main .application-form {
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main .application-form .application-form-detail {
+    width: 100%;
+}
+
+main .application-form .application-form-detail h4 {
+    display: block;
+    color: var(--white);
+    background-color: var(--mainColor);
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+form .form-group {
+    margin: 10px 5px;
+    width: calc(100% - 10px);
+}
+
+form label {
+    color: var(--secondaryColor);
+    display: block;
+    margin-bottom: 6px;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea {
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid var(--secondaryColor);
+    outline: none;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border: 1px solid var(--accentColor);
+    box-shadow: 0 0 5px rgba(202, 135, 48, 0.5);
+}
+
+form .form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-inline.flex {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+form .form-inline.flex input {
+    width: unset;
+    margin-right: 10px;
+}
+
+form .form-inline .form-group {
+    width: 48%;
+}
+
+form button {
+    display: block;
+    padding: 8px 12px;
+    background-color: var(--mainColor);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, transform 0.2s;
+    margin-left: 5px;
+}
+
+form button:hover {
+    background-color: var(--accentColor);
+    transform: scale(1.05);
+}
