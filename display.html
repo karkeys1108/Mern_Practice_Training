@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex, Grid, and Block</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Box styling */
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-weight: bold;
+        }
+        .box1 { background-color: #3498db; }
+        .box2 { background-color: #e74c3c; }
+        .box3 { background-color: #2ecc71; }
+
+        /* Display: flex */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Display: grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            grid-gap: 10px;
+            gap: 10px;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Display: block */
+        .block-container {
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+        .block-container .box {
+            display: block;
+            inline-block: none;
+            margin: 10px auto; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Display: Flex</h2>
+        <div class="flex-container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Display: Grid</h2>
+        <div class="grid-container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Display: Block</h2>
+        <div class="block-container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+        </div>
+    </div>
+</body>
+</html>

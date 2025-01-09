@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        #fix
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .container{
+
+            display: flex !important;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+            grid-gap: 10px;
+            padding: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: updown 5s infinite;
+        }
+        .box
+        {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 14px;
+            color: black;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 15%;
+            border-radius: 3;
+            animation: updown 5s infinite;
+        }
+        @keyframes updown
+        {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-100px); }
+            100% { transform: translateY(0); }
+        }
+        #stick{
+            position: sticky;
+            top: 50px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            font-size: 18px;
+            bottom: 50px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /*the lwttwe to run on bottom*/
+        .running-text-bottom
+        {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            animation: text-animation 5s infinite;
+        }
+
+        .runnable-text
+        {
+            font-size: 30px;
+            font-weight: bold;
+            animation: text-animation 5s infinite;
+        }
+        
+        /*animation for text*/
+        @keyframes text-animation
+        {
+            0% { transform: translateX(0); }
+            25% { transform: translatex(600px); }
+            50% { transform: translatex(-600px); }
+            75%{ transform: translateX(600px);}
+            100% { transform: translateX(0); }
+        }
+        
+        /*animation for sticking*/
+        #stick:hover
+        {
+            background-color: lightgray;
+        }
+        
+        /*animation for background image*/
+        body
+        {
+            animation: background-animation 5s infinite;
+        }
+        
+        @keyframes background-animation
+        {
+            0% { background-image: url(bg.jpg); }
+            50% { background-image: url(bg2.jpg); }
+            100% { background-image: url(bg.jpg); }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>6</h1>
+        </div>
+        <div class="box">
+            <h1>6</h1>
+        </div>
+        <div class="box">
+            <h1>6</h1>
+        </div>
+        <div class="box">
+            <h1>6</h1>
+        </div>
+
+        <div class="running-text-bottom">
+            <p id="runnable-text">This is a running text on the bottom of the page.</p>
+        </div>
+
+        <h1 id="fix"> I will never move </h1>
+        <span id="stick">   I will stick in a point </span>
+    </div>
+
+</body>
+</html>
